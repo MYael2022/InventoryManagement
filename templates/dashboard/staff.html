@@ -1,0 +1,46 @@
+{% extends 'partials/base.html' %}
+{% block title %}Staff Page{% endblock %}
+
+{% block content %}
+
+{% include 'partials/topnav.html' %}
+<!--Inicio de tabla-->
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+            <table class="table bg-white">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Numero Cel.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a class="btn btn-info btn-sm" href="">View</a></th>
+                        <td>Marco</td>
+                        <td>Martinez</td>
+                        <td>5539286664</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a class="btn btn-info btn-sm" href="">View</a></th>
+                        <td>Carmen</td>
+                        <td>Mendez</td>
+                        <td>5558840683</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><a class="btn btn-info btn-sm" href="">View</a></th>
+                        <td>Lalo</td>
+                        <td>Rojas</td>
+                        <td>5546724515</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <!--Fin de la tabla-->
+{% endblock %}
